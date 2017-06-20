@@ -1,0 +1,40 @@
+Traceback (most recent call last):
+  File "/home/ec2-user/space/python-code/spider_school/spider_school.py", line 81, in <module>
+    run()
+  File "/home/ec2-user/space/python-code/spider_school/spider_school.py", line 76, in run
+    getInfo2(academic_trends,data_in)
+  File "/home/ec2-user/space/python-code/spider_school/spider_school.py", line 53, in getInfo2
+    selector = getRequests(url)
+  File "/home/ec2-user/space/python-code/spider_school/spider_school.py", line 32, in getRequests
+    r = requests.get(url)
+  File "/usr/lib/python2.7/site-packages/requests/api.py", line 68, in get
+    return request('get', url, **kwargs)
+  File "/usr/lib/python2.7/site-packages/requests/api.py", line 50, in request
+    response = session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python2.7/site-packages/requests/sessions.py", line 464, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python2.7/site-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python2.7/site-packages/requests/adapters.py", line 415, in send
+    raise ConnectionError(err, request=request)
+ConnectionError: ('Connection aborted.', gaierror(-2, 'Name or service not known'))
+Traceback (most recent call last):
+  File "/home/ec2-user/space/python-code/spider_school/spider_school.py", line 81, in <module>
+    run()
+  File "/home/ec2-user/space/python-code/spider_school/spider_school.py", line 71, in run
+    getInfo(anounceInfo,data_in)
+  File "/home/ec2-user/space/python-code/spider_school/spider_school.py", line 39, in getInfo
+    selector = getRequests(url)
+  File "/home/ec2-user/space/python-code/spider_school/spider_school.py", line 32, in getRequests
+    r = requests.get(url)
+  File "/usr/lib/python2.7/site-packages/requests/api.py", line 68, in get
+    return request('get', url, **kwargs)
+  File "/usr/lib/python2.7/site-packages/requests/api.py", line 50, in request
+    response = session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python2.7/site-packages/requests/sessions.py", line 464, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python2.7/site-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python2.7/site-packages/requests/adapters.py", line 415, in send
+    raise ConnectionError(err, request=request)
+ConnectionError: ('Connection aborted.', gaierror(-2, 'Name or service not known'))
